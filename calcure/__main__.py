@@ -255,7 +255,7 @@ class EventView(View):
         self.screen = screen
         self.start_time = ""
 
-        # Show time for ICS events if it set:
+        # Show time for ICS events if it is set:
         if hasattr(self.event, 'hour'):
             if self.event.hour:
                 self.start_time = f"{self.event.hour:0=2}:{self.event.minute:0=2} "
